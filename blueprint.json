@@ -1,0 +1,19 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+    "login": true,
+    "steps": [
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "kate & tom/'s demo"
+			}
+		},
+        {
+			"step": "installTheme",
+			"themeData": {
+				"resource": "url",
+				"url": "https://your-site.com/your-theme.zip"
+			}
+		}
+    ]
+}
