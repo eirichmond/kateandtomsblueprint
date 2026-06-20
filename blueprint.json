@@ -20,8 +20,7 @@
 			"pluginData": {
 				"resource": "git:directory",
 				"url": "https://github.com/eirichmond/kate-toms-core",
-					"ref": "HEAD",
-					"path": "wp-content/plugins/kate-toms-core"
+					"ref": "HEAD"
 			},
 			"options": {
 				"activate": true
