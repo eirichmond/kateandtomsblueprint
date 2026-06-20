@@ -16,10 +16,36 @@
 			}
 		},
 		{
-			"step": "importWxr",
-			"file": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/eirichmond/kateandtomsblueprint/blob/main/kateamptom039s.WordPress.pages.xml"
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "git:directory",
+				"url": "https://github.com/eirichmond/kate-toms-core",
+					"ref": "HEAD",
+					"path": "wp-content/plugins/kate-toms-core"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "runPHPWithOptions",
+			"options": {
+				"code": "<?php require_once '/wordpress/wp-load.php'; update_option('show_on_front', 'page');?>",
+				"body": "Static page set with runPHPWithOptions"
+			}
+		},
+		{
+			"step": "runPHPWithOptions",
+			"options": {
+				"code": "<?php require_once '/wordpress/wp-load.php'; update_option('page_on_front', '4');?>",
+				"body": "Home page set with runPHPWithOptions"
+			}
+		},
+		{
+			"step": "runPHPWithOptions",
+			"options": {
+				"code": "<?php require_once '/wordpress/wp-load.php'; update_option('page_for_posts', '12');?>",
+				"body": "Blog set with runPHPWithOptions"
 			}
 		}
     ]
