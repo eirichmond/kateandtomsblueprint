@@ -51,7 +51,7 @@
 			"step": "importWxr",
 			"file": {
 				"resource": "url",
-				"url": "https://raw.githubusercontent.com/eirichmond/kateandtomsblueprint/blob/main/content.xml"
+				"url": "https://raw.githubusercontent.com/eirichmond/kateandtomsblueprint/refs/heads/main/content.xml"
 			}
 		}
     ]
