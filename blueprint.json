@@ -8,6 +8,13 @@
 				"blogname": "kate & tom/'s demo"
 			}
 		},
+		{
+			"step": "importWxr",
+			"file": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/eirichmond/kateandtomsblueprint/refs/heads/main/content.xml"
+			}
+		},
         {
 			"step": "installTheme",
 			"themeData": {
@@ -45,13 +52,6 @@
 			"options": {
 				"code": "<?php require_once '/wordpress/wp-load.php'; update_option('page_for_posts', '12');?>",
 				"body": "Blog set with runPHPWithOptions"
-			}
-		},
-		{
-			"step": "importWxr",
-			"file": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/eirichmond/kateandtomsblueprint/refs/heads/main/content.xml"
 			}
 		}
     ]
