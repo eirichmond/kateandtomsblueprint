@@ -8,13 +8,6 @@
 				"blogname": "kate & tom/'s demo"
 			}
 		},
-		{
-			"step": "importWxr",
-			"file": {
-				"resource": "url",
-				"url": "https://raw.githubusercontent.com/eirichmond/kateandtomsblueprint/refs/heads/main/content.xml"
-			}
-		},
         {
 			"step": "installTheme",
 			"themeData": {
@@ -31,6 +24,13 @@
 			},
 			"options": {
 				"activate": true
+			}
+		},
+		{
+			"step": "importWxr",
+			"file": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/eirichmond/kateandtomsblueprint/refs/heads/main/content.xml"
 			}
 		},
 		{
