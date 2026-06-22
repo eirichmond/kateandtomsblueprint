@@ -53,6 +53,11 @@
 				"code": "<?php require_once '/wordpress/wp-load.php'; update_option('page_for_posts', '12');?>",
 				"body": "Blog set with runPHPWithOptions"
 			}
+		},
+		{
+			"step": "writeFile",
+			"path": "/wordpress/wp-content/mu-plugins/rewrite.php",
+			"data": "<?php /* Use pretty permalinks */ add_action( 'after_setup_theme', function() { global $wp_rewrite; $wp_rewrite->set_permalink_structure('/%postname%/'); $wp_rewrite->flush_rules(); } );"
 		}
     ]
 }
